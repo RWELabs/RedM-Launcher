@@ -1,7 +1,7 @@
 <p align=center><a href="#"><img src="https://github.com/RWELabs/RedM-Launcher/blob/main/WebAssets/RedM_Launcher_Head.png?raw=true" width="600px"></a></p>
 
 # RedM Launcher
-<p align=center><a href="#"><img src="https://raw.githubusercontent.com/RWELabs/RedM-Launcher/f4b472ef0022e221102974e2ba84387ca0859d53/WebAssets/csharpdotnet.svg"></a></p>
+<p align=left><a href="#"><img src="https://github.com/RWELabs/RedM-Launcher/blob/main/WebAssets/csharpdotnet.svg"></a><a href="#"><img src="https://github.com/RWELabs/RedM-Launcher/blob/main/WebAssets/w11w10.svg"></a></p>
 
 RedM Launcher is a custom launcher for RedM by Cfx.re that automatically checks and clears cache files before launching the game. This program aims to target the previous solution for automatically clearing cache files, which was to create a bat script. RedM Launcher offers a clean, user friendly and non-intimidating solution that is fast and effective.
 
