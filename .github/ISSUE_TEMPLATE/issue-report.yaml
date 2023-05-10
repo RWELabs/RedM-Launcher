@@ -1,0 +1,67 @@
+name: 🐛 Report a Bug/Issue
+description: Report a bug or issue you've found in RedM Launcher.
+title: '[Issue] '
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing a bug report! This issue tracker is for [RedM Launcher](https://github.com/RWELabs/RedM-Launcher/). Please search the issue tracker to see if there is an existing issue for the problem you are experiencing.
+  - type: textarea
+    id: the-problem
+    attributes:
+      label: The Issue or Bug
+      description:
+        Describe the issue you are experiencing with RedM Launcher. 
+        Provide a clear and concise description of what you were trying to 
+        do and what happened, along with any error messages you encountered.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description:
+        You can find the version number in the control panel or apps list in Windows settings.
+    validations:
+      required: true
+  - type: dropdown
+    id: operating-system
+    attributes:
+      label: Operating System
+      description:
+        'Enter the specific operating system version you are running. If not listed, please select other and provide us your operating system details in the additional context text field.'
+      options:
+        - 'Windows 11'
+        - 'Windows 10'
+        - 'Windows 8/8.1'
+        - 'Other'
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce the behavior
+      description: Provide steps to reproduce the problem you are experiencing.
+      placeholder: |
+        1. Go to '...'
+        2. Click on '....'
+        3. Scroll down to '....'
+        4. See error
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Add screenshots to help explain your problem, if applicable.
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description:
+        Add any other context about the problem you are experiencing here.
+  - type: textarea
+    id: suggested-resolution
+    attributes:
+      label: Suggested Resolution
+      description:
+        If you're a developer and have a suggestion for resolving this issue that may help us resolve it faster,
+        please let us know here.
