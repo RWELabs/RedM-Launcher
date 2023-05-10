@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>RedM_Launcher</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>RedM.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="resx\img\RedM.ico" />
+    <None Remove="resx\img\RedMBg.png" />
+    <None Remove="resx\img\RedMLg.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="RedM.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="resx\img\RedM.ico" />
+    <Resource Include="resx\img\RedMBg.png" />
+    <Resource Include="resx\img\RedMLg.png" />
+  </ItemGroup>
+
+</Project>
