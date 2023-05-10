@@ -1,0 +1,22 @@
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\bin\Release\net6.0-windows\RedM Launcher.exe
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\bin\Release\net6.0-windows\RedM Launcher.deps.json
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\bin\Release\net6.0-windows\RedM Launcher.runtimeconfig.json
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\bin\Release\net6.0-windows\RedM Launcher.dll
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\bin\Release\net6.0-windows\RedM Launcher.pdb
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.0-windows\RedM Launcher.csproj.AssemblyReference.cache
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.0-windows\MainWindow.g.cs
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.0-windows\App.g.cs
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.0-windows\RedM Launcher_MarkupCompile.cache
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.0-windows\RedM Launcher_MarkupCompile.lref
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.0-windows\MainWindow.baml
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.0-windows\RedM Launcher.g.resources
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.0-windows\RedM Launcher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.0-windows\RedM Launcher.AssemblyInfoInputs.cache
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.0-windows\RedM Launcher.AssemblyInfo.cs
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.0-windows\RedM Launcher.csproj.CoreCompileInputs.cache
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.0-windows\RedM Launcher.dll
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.0-windows\refint\RedM Launcher.dll
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.0-windows\RedM Launcher.pdb
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.0-windows\RedM Launcher.genruntimeconfig.cache
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.0-windows\ref\RedM Launcher.dll
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.0-windows\RedM Launcher_Content.g.cs

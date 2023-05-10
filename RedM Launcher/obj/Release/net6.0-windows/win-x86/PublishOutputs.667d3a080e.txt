@@ -1,0 +1,7 @@
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\bin\Release\publish\win-x86\RedM Launcher.pdb
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\bin\Release\publish\win-x86\D3DCompiler_47_cor3.dll
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\bin\Release\publish\win-x86\PenImc_cor3.dll
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\bin\Release\publish\win-x86\PresentationNative_cor3.dll
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\bin\Release\publish\win-x86\vcruntime140_cor3.dll
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\bin\Release\publish\win-x86\wpfgfx_cor3.dll
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\bin\Release\publish\win-x86\RedM Launcher.exe
