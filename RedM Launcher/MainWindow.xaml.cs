@@ -130,6 +130,7 @@ namespace RedM_Launcher
 
             //Cache File Locations
             string servercache = RedMAppData + @"\server-cache\";
+            string cache = RedMAppData + @"\cache\";
             string servercachepriv = RedMAppData + @"\server-cache-priv\";
 
             //Delete Cache
@@ -143,7 +144,13 @@ namespace RedM_Launcher
             {
                 DetailText.Text = @"data\server-cache-priv";
                 Directory.Delete(servercachepriv, true);
-                progress.Value = 95;
+                progress.Value = 93;
+            }
+            if (Directory.Exists(cache))
+            {
+                DetailText.Text = @"data\cache";
+                Directory.Delete(servercachepriv, true);
+                progress.Value = 98;
             }
 
             //Start RedM
