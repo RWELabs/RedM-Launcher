@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:RedM_Launcher"
         mc:Ignorable="d"
         Title="Starting | RedM Launcher" Height="334" Width="310" ResizeMode="NoResize" AllowsTransparency="True" WindowStartupLocation="CenterScreen" WindowStyle="None" Background="Transparent">
-    <Border BorderBrush="#FF9F0000" BorderThickness="1,1,1,1" CornerRadius="23,23,23,23">
+    <Border BorderBrush="#FF9F0000" BorderThickness="1,1,1,1" CornerRadius="15,15,15,15">
         <Border.Background>
             <ImageBrush ImageSource="/resx/img/RedMBg.png" Stretch="UniformToFill"/>
         </Border.Background>
@@ -15,9 +15,9 @@
                 <ImageBrush/>
             </Grid.Background>
             <Image x:Name="image" Height="152" Margin="38,38,38,0" VerticalAlignment="Top" Source="/resx/img/RedMLg.png"/>
-            <TextBlock x:Name="DetailText" HorizontalAlignment="Left" Margin="10,285,0,0" TextWrapping="Wrap" Text="Test" VerticalAlignment="Top" Foreground="White" Height="19" Width="357" FontSize="11"/>
-            <TextBlock x:Name="StatusText" HorizontalAlignment="Left" Margin="10,259,0,0" TextWrapping="Wrap" Text="Test" VerticalAlignment="Top" Foreground="White" Height="26" Width="357" FontSize="14" FontWeight="Bold"/>
-            <ProgressBar x:Name="progress" Height="15" Margin="18,218,18,0" VerticalAlignment="Top" Background="#FF9F0000" Foreground="#FF6B0000" Value="100" BorderBrush="#FF9F0000"/>
+            <TextBlock x:Name="DetailText" Margin="10,285,10,0" TextWrapping="Wrap" Text="Test" VerticalAlignment="Top" Foreground="White" Height="19" FontSize="11" TextAlignment="Center"/>
+            <TextBlock x:Name="StatusText" Margin="10,259,10,0" TextWrapping="Wrap" Text="Test" VerticalAlignment="Top" Foreground="White" Height="26" FontSize="14" FontWeight="Bold" TextAlignment="Center"/>
+            <ProgressBar x:Name="progress" Height="15" Margin="18,218,18,0" VerticalAlignment="Top" Background="#FF6B0000" Foreground="White" Value="5" BorderBrush="#FF9F0000"/>
 
         </Grid>
     </Border>
