@@ -149,7 +149,7 @@ namespace RedM_Launcher
             if (Directory.Exists(cache))
             {
                 DetailText.Text = @"data\cache";
-                Directory.Delete(servercachepriv, true);
+                Directory.Delete(cache, true);
                 progress.Value = 98;
             }
 
