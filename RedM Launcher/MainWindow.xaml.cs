@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -26,6 +27,8 @@ namespace RedM_Launcher
         //Create Timers
         System.Windows.Threading.DispatcherTimer StartCheckingRedM = new System.Windows.Threading.DispatcherTimer();
         System.Windows.Threading.DispatcherTimer ClearRedMCache = new System.Windows.Threading.DispatcherTimer();
+        System.Windows.Threading.DispatcherTimer ClearRedMServerCache = new System.Windows.Threading.DispatcherTimer();
+        System.Windows.Threading.DispatcherTimer ClearRedMServerCachePriv = new System.Windows.Threading.DispatcherTimer();
         System.Windows.Threading.DispatcherTimer UpdateStatus = new System.Windows.Threading.DispatcherTimer();
         System.Windows.Threading.DispatcherTimer StartRedM = new System.Windows.Threading.DispatcherTimer();
         System.Windows.Threading.DispatcherTimer FinishingUpTimer = new System.Windows.Threading.DispatcherTimer();
@@ -100,7 +103,7 @@ namespace RedM_Launcher
                     //Copy the bundled RedM copy to the AppData Folder
                     File.Copy(RedMBundled, RedM);
 
-                    progress.Value = 30;
+                    progress.Value = 50;
 
                     //Clear Cache
                     ClearRedMCache.Tick += ClearRedMCache_Tick;
@@ -133,29 +136,72 @@ namespace RedM_Launcher
             string cache = RedMAppData + @"\cache\";
             string servercachepriv = RedMAppData + @"\server-cache-priv\";
 
+            DetailText.Text = @"data\cache";
+            if (Directory.Exists(cache))
+            {
+                Directory.Delete(cache, true);
+                progress.Value = 81;
+            }
+
+            //Next Step
+            ClearRedMServerCache.Tick += ClearRedMServerCache_Tick;
+            ClearRedMServerCache.Interval = new TimeSpan(0, 0, 2);
+            ClearRedMServerCache.Start();
+        }
+
+        private void ClearRedMServerCache_Tick(object? sender, EventArgs e)
+        {
+            ClearRedMServerCache.Stop();
+
+            string LocalAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            string RedMAppData = LocalAppData + @"\RedM\RedM.app\data";
+
+            StatusText.Text = "Clearing Cache";
+            progress.Value = 84;
+
+            //Cache File Locations
+            string servercache = RedMAppData + @"\server-cache\";
+            string cache = RedMAppData + @"\cache\";
+            string servercachepriv = RedMAppData + @"\server-cache-priv\";
+
+            DetailText.Text = @"data\server-cache";
             //Delete Cache
             if (Directory.Exists(servercache))
             {
-                DetailText.Text = @"data\server-cache";
                 Directory.Delete(servercache, true);
-                progress.Value = 85;
+                progress.Value = 94;
             }
+            
+            //Next Step
+            ClearRedMServerCachePriv.Tick += ClearRedMServerCachePriv_Tick;
+            ClearRedMServerCachePriv.Interval = new TimeSpan(0, 0, 2);
+            ClearRedMServerCachePriv.Start();
+        }
+
+        private void ClearRedMServerCachePriv_Tick(object? sender, EventArgs e)
+        {
+            ClearRedMServerCachePriv.Stop();
+
+            string LocalAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            string RedMAppData = LocalAppData + @"\RedM\RedM.app\data";
+
+            StatusText.Text = "Clearing Cache";
+            progress.Value = 96;
+
+            //Cache File Locations
+            string servercache = RedMAppData + @"\server-cache\";
+            string cache = RedMAppData + @"\cache\";
+            string servercachepriv = RedMAppData + @"\server-cache-priv\";
+
+            DetailText.Text = @"data\server-cache-priv";
+            //Delete Cache
             if (Directory.Exists(servercachepriv))
             {
-                DetailText.Text = @"data\server-cache-priv";
                 Directory.Delete(servercachepriv, true);
-                progress.Value = 93;
-            }
-            if (Directory.Exists(cache))
-            {
-                DetailText.Text = @"data\cache";
-                Directory.Delete(cache, true);
-                progress.Value = 98;
+                progress.Value = 99;
             }
 
             //Start RedM
-            StatusText.Text = "Clearing Cache";
-            DetailText.Text = "Finshing up...";
             UpdateStatus.Tick += UpdateStatus_Tick;
             UpdateStatus.Interval = new TimeSpan(0, 0, 3);
             UpdateStatus.Start();
@@ -164,7 +210,7 @@ namespace RedM_Launcher
         private void UpdateStatus_Tick(object? sender, EventArgs e)
         {
             UpdateStatus.Stop();
-            progress.Value = 96;
+            progress.Value = 35;
             StatusText.Text = "Launching Game";
             DetailText.Text = @"Starting 'RedM\RedM.exe'";
             StartRedM.Tick += StartRedM_Tick;
@@ -175,7 +221,7 @@ namespace RedM_Launcher
         private void StartRedM_Tick(object? sender, EventArgs e)
         {
             StartRedM.Stop();
-            progress.Value = 98;
+            progress.Value = 75;
             LaunchRedM();
         }
 
@@ -204,7 +250,19 @@ namespace RedM_Launcher
 
         private void FinishUp(object? sender, EventArgs e)
         {
-            //Close application
+            //Check for updates
+            FinishingUpTimer.Stop();
+
+            StatusText.Text = "Checking for Updates";
+            DetailText.Text = @"Connecting to labs.ryanwalpole.com...";
+
+            DoUpdatePrompt();
+        }
+
+        private void DoUpdatePrompt()
+        {
+            UpdateHandler update = new UpdateHandler();
+            update.Show();
             this.Close();
         }
     }
