@@ -26,4 +26,19 @@
     <Resource Include="resx\img\RedMLg.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="redmLauncher.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>redmLauncher.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="redmLauncher.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>redmLauncher.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
 </Project>
