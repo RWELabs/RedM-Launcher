@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "RedM Launcher"
-#define MyAppVersion "230503"
+#define MyAppVersion "230504"
 #define MyAppPublisher "RWE Labs"
 #define MyAppURL "https://labs.ryanwalpole.com/"
 #define MyAppExeName "RedM Launcher.exe"
