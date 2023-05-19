@@ -521,3 +521,6 @@ C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.
 C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.0-windows\win-x86\RedM Launcher.pdb
 C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.0-windows\win-x86\RedM Launcher.genruntimeconfig.cache
 C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.0-windows\win-x86\ref\RedM Launcher.dll
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\bin\Release\net6.0-windows\win-x86\RedM Launcher.dll.config
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.0-windows\win-x86\UpdateHandler.g.cs
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.0-windows\win-x86\UpdateHandler.baml
