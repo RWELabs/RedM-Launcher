@@ -11,6 +11,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="close-box.png" />
     <None Remove="resx\img\RedM.ico" />
     <None Remove="resx\img\RedMBg.png" />
     <None Remove="resx\img\RedMLg.png" />
@@ -21,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="resx\img\close-box.png" />
     <Resource Include="resx\img\RedM.ico" />
     <Resource Include="resx\img\RedMBg.png" />
     <Resource Include="resx\img\RedMLg.png" />
