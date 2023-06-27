@@ -39,10 +39,6 @@ namespace RedM_Launcher
             StatusText.Text = "Initializing";
             DetailText.Text = "Checking for RedM...";
             progress.Value = 10;
-
-            StartCheckingRedM.Tick += StartCheckingRedM_Tick;
-            StartCheckingRedM.Interval = new TimeSpan(0, 0, 3);
-            StartCheckingRedM.Start();
         }
 
         private void StartCheckingRedM_Tick(object? sender, EventArgs e)
@@ -264,6 +260,80 @@ namespace RedM_Launcher
             UpdateHandler update = new UpdateHandler();
             update.Show();
             this.Close();
+        }
+
+        private void ClearButtonHoverOn(object sender, MouseEventArgs e)
+        {
+            ClearCache.Fill = new SolidColorBrush(Color.FromArgb(255,93,0,0));
+        }
+
+        private void StartButtonHoverOn(object sender, MouseEventArgs e)
+        {
+            StartRM.Fill = new SolidColorBrush(Color.FromArgb(255, 93, 0, 0));
+        }
+
+        private void StartButtonHoverOff(object sender, MouseEventArgs e)
+        {
+            StartRM.Fill = new SolidColorBrush(Color.FromArgb(255, 136, 0, 0));
+        }
+
+        private void ClearButtonHoverOff(object sender, MouseEventArgs e)
+        {
+            ClearCache.Fill = new SolidColorBrush(Color.FromArgb(255, 136, 0, 0));
+        }
+
+        private void ClearButtonClick(object sender, MouseButtonEventArgs e)
+        {
+            StartRM.Visibility = Visibility.Hidden;
+            StartRMLabel.Visibility = Visibility.Hidden;
+            ClearCache.Visibility = Visibility.Hidden;
+            ClearLabel.Visibility = Visibility.Hidden;
+
+            progress.Visibility = Visibility.Visible;
+            DetailText.Visibility = Visibility.Visible;
+            StatusText.Visibility = Visibility.Visible;
+
+            StartCheckingRedM.Tick += StartCheckingRedM_Tick;
+            StartCheckingRedM.Interval = new TimeSpan(0, 0, 3);
+            StartCheckingRedM.Start();
+        }
+
+        private void StartButtonClick(object sender, MouseButtonEventArgs e)
+        {
+            StartRM.Visibility = Visibility.Hidden;
+            StartRMLabel.Visibility = Visibility.Hidden;
+            ClearCache.Visibility = Visibility.Hidden;
+            ClearLabel.Visibility = Visibility.Hidden;
+
+            progress.Visibility = Visibility.Visible;
+            DetailText.Visibility = Visibility.Visible;
+            StatusText.Visibility = Visibility.Visible;
+
+            //Define Location of RedM and RedM App Data
+            string LocalAppData = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            string RedM = LocalAppData + @"\RedM\RedM.exe";
+
+            try
+            {
+                Process.Start(RedM);
+                progress.Value = 100;
+                StatusText.Text = "Finishing up";
+                DetailText.Text = @"Please wait...";
+                FinishingUpTimer.Tick += FinishUp;
+                FinishingUpTimer.Interval = new TimeSpan(0, 0, 7);
+                FinishingUpTimer.Start();
+            }
+            catch
+            {
+                //
+                this.Close();
+            }
+        }
+
+        private void CloseButtonClick(object sender, MouseButtonEventArgs e)
+        {
+            this.Close();
+            System.Windows.Application.Current.Shutdown();
         }
     }
 }
