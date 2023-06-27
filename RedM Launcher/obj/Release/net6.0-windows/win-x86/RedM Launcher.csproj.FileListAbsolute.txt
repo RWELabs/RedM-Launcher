@@ -272,7 +272,6 @@ C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\bin\Release\net6.
 C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\bin\Release\net6.0-windows\win-x86\hostfxr.dll
 C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\bin\Release\net6.0-windows\win-x86\hostpolicy.dll
 C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\bin\Release\net6.0-windows\win-x86\mscordaccore.dll
-C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\bin\Release\net6.0-windows\win-x86\mscordaccore_x86_x86_6.0.1623.17311.dll
 C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\bin\Release\net6.0-windows\win-x86\mscordbi.dll
 C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\bin\Release\net6.0-windows\win-x86\mscorrc.dll
 C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\bin\Release\net6.0-windows\win-x86\msquic.dll
@@ -524,3 +523,4 @@ C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.
 C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\bin\Release\net6.0-windows\win-x86\RedM Launcher.dll.config
 C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.0-windows\win-x86\UpdateHandler.g.cs
 C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\obj\Release\net6.0-windows\win-x86\UpdateHandler.baml
+C:\Users\rwalpole\Documents\GitHub\RedM-Launcher\RedM Launcher\bin\Release\net6.0-windows\win-x86\mscordaccore_x86_x86_6.0.1823.26907.dll
