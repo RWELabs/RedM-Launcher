@@ -14,10 +14,15 @@
             <Grid.Background>
                 <ImageBrush/>
             </Grid.Background>
-            <Image x:Name="image" Height="152" Margin="38,38,38,0" VerticalAlignment="Top" Source="/resx/img/RedMLg.png"/>
-            <TextBlock x:Name="DetailText" Margin="10,285,10,0" TextWrapping="Wrap" Text="Test" VerticalAlignment="Top" Foreground="White" Height="19" FontSize="11" TextAlignment="Center"/>
-            <TextBlock x:Name="StatusText" Margin="10,259,10,0" TextWrapping="Wrap" Text="Test" VerticalAlignment="Top" Foreground="White" Height="26" FontSize="14" FontWeight="Bold" TextAlignment="Center"/>
-            <ProgressBar x:Name="progress" Height="15" Margin="18,218,18,0" VerticalAlignment="Top" Background="#FF6B0000" Foreground="White" Value="5" BorderBrush="#FF9F0000"/>
+            <Image x:Name="image" Height="130" Margin="38,38,38,0" VerticalAlignment="Top" Source="/resx/img/RedMLg.png"/>
+            <TextBlock x:Name="DetailText" Margin="10,285,10,0" TextWrapping="Wrap" Text="Test" VerticalAlignment="Top" Foreground="White" Height="19" FontSize="11" TextAlignment="Center" Visibility="Hidden"/>
+            <TextBlock x:Name="StatusText" Margin="10,259,10,0" TextWrapping="Wrap" Text="Test" VerticalAlignment="Top" Foreground="White" Height="26" FontSize="14" FontWeight="Bold" TextAlignment="Center" Visibility="Hidden"/>
+            <ProgressBar x:Name="progress" Height="15" Margin="18,218,18,0" VerticalAlignment="Top" Background="#FF6B0000" Foreground="White" Value="5" BorderBrush="#FF9F0000" Visibility="Hidden"/>
+            <Rectangle x:Name="ClearCache" Height="37" Margin="47,207,47,0" Stroke="White" VerticalAlignment="Top" Fill="#FF880000" MouseEnter="ClearButtonHoverOn" MouseLeave="ClearButtonHoverOff" MouseLeftButtonDown="ClearButtonClick" RadiusX="7.5" RadiusY="7.5"/>
+            <Rectangle x:Name="StartRM" Height="37" Margin="47,255,47,0" Stroke="White" VerticalAlignment="Top" Fill="#FF880000" MouseLeave="StartButtonHoverOff" MouseEnter="StartButtonHoverOn" MouseLeftButtonDown="StartButtonClick" RadiusX="7.5" RadiusY="7.5"/>
+            <Label x:Name="ClearLabel" Content="Clear Cache and Start RedM" Margin="0,211,0,0" VerticalAlignment="Top" Foreground="White" MouseEnter="ClearButtonHoverOn" MouseLeave="ClearButtonHoverOff" MouseLeftButtonDown="ClearButtonClick" FontFamily="Segoe UI Semibold" FontSize="14" HorizontalAlignment="Center"/>
+            <Label x:Name="StartRMLabel" Content="Start RedM" HorizontalAlignment="Center" Margin="0,258,0,0" VerticalAlignment="Top" Foreground="White" MouseLeave="StartButtonHoverOff" MouseEnter="StartButtonHoverOn" MouseLeftButtonDown="StartButtonClick" FontFamily="Segoe UI Semibold" FontSize="14"/>
+            <Image x:Name="CloseButtonTopRight" HorizontalAlignment="Left" Height="20" Margin="278,6,0,0" VerticalAlignment="Top" Width="21" Source="/resx/img/close-box.png" MouseLeftButtonDown="CloseButtonClick"/>
 
         </Grid>
     </Border>
