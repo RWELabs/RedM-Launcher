@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "E/tgTI4fzNIACTPuaqcDjC7GKrbu5IDUJy3dlZdkbbXsG+XnVuZMLUKxv76zuNhgFQAInK61fA9ey7Chl2orww==",
+  "dgSpecHash": "2UMFiecta0zOYRNbMaWgM5vvpch+4DVKbRsuXHm+Yv0x8+o+04YUkIHCBAv3rdGYjsn0vU8nE2Ls14vWaK5Usg==",
   "success": true,
   "projectFilePath": "C:\\Users\\rwalpole\\Documents\\GitHub\\RedM-Launcher\\RedM Launcher\\RedM Launcher.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\rwalpole\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\6.0.16\\microsoft.netcore.app.runtime.win-x86.6.0.16.nupkg.sha512",
-    "C:\\Users\\rwalpole\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\6.0.16\\microsoft.windowsdesktop.app.runtime.win-x86.6.0.16.nupkg.sha512",
-    "C:\\Users\\rwalpole\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\6.0.16\\microsoft.aspnetcore.app.runtime.win-x86.6.0.16.nupkg.sha512"
+    "C:\\Users\\rwalpole\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x86\\6.0.18\\microsoft.netcore.app.runtime.win-x86.6.0.18.nupkg.sha512",
+    "C:\\Users\\rwalpole\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x86\\6.0.18\\microsoft.windowsdesktop.app.runtime.win-x86.6.0.18.nupkg.sha512",
+    "C:\\Users\\rwalpole\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x86\\6.0.18\\microsoft.aspnetcore.app.runtime.win-x86.6.0.18.nupkg.sha512"
   ],
   "logs": []
 }
